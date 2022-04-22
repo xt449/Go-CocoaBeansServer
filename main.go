@@ -18,11 +18,11 @@ func main() {
 	var man packet.Manager
 	man.GetIncomingPacketBuilder(1)
 
-	var container = nbt.NewContainer()
-	container.GetRoot()["test"] = nbt.NewByteTag(1)
+	var container = nbt.NewContainer("")
+	container.Root["testb"] = nbt.NewByteTag(1)
+	container.Root["testl"] = nbt.NewLongTag(2)
 
-	var mini = nbt.NewMiniContainer()
-	mini["test"] = nbt.NewLongTag(1)
+	fmt.Println(container)
 }
 
 func colorTest() {
