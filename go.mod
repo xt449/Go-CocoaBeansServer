@@ -1,4 +1,4 @@
-module Learning2
+module CocoaBeansServer
 
 go 1.18
 
