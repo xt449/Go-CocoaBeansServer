@@ -1,8 +1,6 @@
-package entity_data
+package packet_data
 
-import "Learning2/cocoabeans/protocol/packet/packet_data"
-
-type Pose packet_data.Enum[Pose]
+type Pose Enum[Pose]
 
 const (
 	STANDING     Pose = iota

@@ -1,8 +1,6 @@
-package world_data
+package packet_data
 
-import "Learning2/cocoabeans/protocol/packet/packet_data"
-
-type Direction packet_data.Enum[Direction]
+type Direction Enum[Direction]
 
 const (
 	Down  Direction = iota

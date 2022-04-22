@@ -1,4 +1,4 @@
-package world_data
+package packet_data
 
 type Rotation struct {
 	X float32
