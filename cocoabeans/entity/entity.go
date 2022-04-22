@@ -1,9 +1,9 @@
 package entity
 
 import (
-	"Learning2/cocoabeans/entity/trait"
-	"Learning2/cocoabeans/math"
-	"Learning2/cocoabeans/nbt"
+	"CocoaBeansServer/cocoabeans/entity/trait"
+	"CocoaBeansServer/cocoabeans/math"
+	"CocoaBeansServer/cocoabeans/nbt"
 )
 
 type Entity[T trait.Trait] interface {

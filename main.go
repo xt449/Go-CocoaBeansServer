@@ -1,10 +1,10 @@
 package main
 
 import (
-	colors2 "Learning2/cocoabeans/colors"
-	"Learning2/cocoabeans/nbt"
-	"Learning2/cocoabeans/protocol"
-	"Learning2/cocoabeans/protocol/packet"
+	"CocoaBeansServer/cocoabeans/colors"
+	"CocoaBeansServer/cocoabeans/nbt"
+	"CocoaBeansServer/cocoabeans/protocol"
+	"CocoaBeansServer/cocoabeans/protocol/packet"
 	"fmt"
 )
 
@@ -26,10 +26,10 @@ func main() {
 }
 
 func colorTest() {
-	var color colors2.Color
-	var cc colors2.Color
+	var color colors.Color
+	var cc colors.Color
 
-	color = colors2.FromRGB(51, 153, 204)
+	color = colors.FromRGB(51, 153, 204)
 	fmt.Println("#1 rgb", color)
 	cc = color.ToHSL()
 	fmt.Println("#1 hsl", cc)

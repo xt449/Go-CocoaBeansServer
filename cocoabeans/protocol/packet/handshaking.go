@@ -1,7 +1,7 @@
 package packet
 
 import (
-	"Learning2/cocoabeans/protocol"
+	"CocoaBeansServer/cocoabeans/protocol"
 	"bytes"
 )
 

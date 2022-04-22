@@ -1,6 +1,6 @@
 package block_state
 
-import "Learning2/cocoabeans/data"
+import "CocoaBeansServer/cocoabeans/data"
 
 type BlockState interface {
 	GetNamespaceId() data.NamespaceId

@@ -1,6 +1,6 @@
 package packet_data
 
-import "Learning2/cocoabeans/nbt"
+import "CocoaBeansServer/cocoabeans/nbt"
 
 type NBTTag nbt.Container
 type Position struct {
