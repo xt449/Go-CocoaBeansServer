@@ -1,7 +1,7 @@
 package colors
 
 import (
-	"Learning2/cocoabeans/math_extra"
+	"Learning2/cocoabeans/math/math_extra"
 	"math"
 )
 

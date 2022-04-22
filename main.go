@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Learning2/cocoabeans/data/colors"
+	colors2 "Learning2/cocoabeans/colors"
 	"Learning2/cocoabeans/nbt"
 	"Learning2/cocoabeans/protocol"
 	"Learning2/cocoabeans/protocol/packet"
@@ -18,19 +18,18 @@ func main() {
 	var man packet.Manager
 	man.GetIncomingPacketBuilder(1)
 
-	var tag nbt.Container = nbt.NewContainer()
-	tag.GetRoot()["test"] = nbt.NewByteTag(1)
+	var container = nbt.NewContainer()
+	container.GetRoot()["test"] = nbt.NewByteTag(1)
 
-	var test = []int{1, 2, 3}
-	fmt.Printf("%v %T\n", len(test), len(test))
-
+	var mini = nbt.NewMiniContainer()
+	mini["test"] = nbt.NewLongTag(1)
 }
 
 func colorTest() {
-	var color colors.Color
-	var cc colors.Color
+	var color colors2.Color
+	var cc colors2.Color
 
-	color = colors.FromRGB(51, 153, 204)
+	color = colors2.FromRGB(51, 153, 204)
 	fmt.Println("#1 rgb", color)
 	cc = color.ToHSL()
 	fmt.Println("#1 hsl", cc)
