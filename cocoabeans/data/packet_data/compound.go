@@ -1,10 +1,6 @@
 package packet_data
 
-import (
-	"Learning2/cocoabeans/data/entity_data"
-)
-
-type EntityMetadata[M entity_data.Metadata] struct {
+type EntityMetadata[M Metadata] struct {
 	Index UnsignedByte // If Index is 0xFF then it is the end of the EntityMetadata
 	Type  VarInt
 	Value M
